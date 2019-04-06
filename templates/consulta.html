@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta</title>
+</head>
+<body background='https://image.freepik.com/fotos-gratis/textura-da-tela-azul_1253-76.jpg'>
+<h1>Consulta por Titulação</h1>
+<h3>Professores</h3>
+<table border="1" bgcolor="white">
+    <tr>
+        <th>Titulação</th>
+    </tr>
+    {% for c in consulta %}
+    <tr>
+        <td>{{c[0]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

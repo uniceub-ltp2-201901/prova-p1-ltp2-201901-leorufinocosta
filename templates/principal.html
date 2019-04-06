@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal</title>
+</head>
+<body background='https://image.freepik.com/fotos-gratis/textura-da-tela-azul_1253-76.jpg'>
+<center>
+    <font color="white" font="Verdana">
+        <h1>Bem vindo!</h1>
+    </font>
+    <form action="/listarprofessores" method="get">
+       <button type="submit">Listar Professores</button>
+    </form>
+    <font color="white" font="Verdana">
+    <h2>Consultar Professores por Titulação</h2>
+    </font>
+    <form action="/consultaportitulacao" method="post">
+       Busca: <input type="text" name="parametro"><br>
+        <input type="submit" value="Consultar">
+    </form>
+    <font color="white" font="Verdana">
+    <h2>Consultar Professores Apenas de Computação</h2>
+    </font>
+    <form action="/consultarapenascomputacao" method="get">
+       <button type="submit">Consultar</button>
+    </form>
+</center>
+</body>
+</html>

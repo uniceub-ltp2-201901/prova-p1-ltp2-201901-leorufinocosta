@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body background='https://image.freepik.com/fotos-gratis/textura-da-tela-azul_1253-76.jpg'>
+<center>
+    <font color="white" font="Verdana">
+        <h1>Bem vindo!</h1>
+    </font>
+    <table border="1" bgcolor="white">
+        <tr>
+            <th>Professores</th>
+        </tr>
+        {% for prof in detalhar %}
+        <tr>
+            <td><a href="/exibirprofessor/{{prof[0]}}">{{prof[0]}}</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>
